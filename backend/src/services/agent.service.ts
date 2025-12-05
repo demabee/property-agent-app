@@ -1,7 +1,35 @@
 import { Agent } from "../models/agent.model";
 
 export class AgentService {
-  private agents: Agent[] = [];
+  private agents: Agent[] = [
+    {
+      id: "1",
+      firstName: "John",
+      lastName: "Doe",
+      email: "john.doe@example.com",
+      mobileNumber: "09171234567",
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      id: "2",
+      firstName: "Jane",
+      lastName: "Smith",
+      email: "jane.smith@example.com",
+      mobileNumber: "09179876543",
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      id: "3",
+      firstName: "Robert",
+      lastName: "Johnson",
+      email: "robert.johnson@example.com",
+      mobileNumber: "09172345678",
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+  ];
 
   getAll(): Agent[] {
     return this.agents;
